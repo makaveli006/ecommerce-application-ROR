@@ -1,4 +1,6 @@
 
+# I WOULD SUGGEST INSTALL BOTH ENVIRONMENT IN WINDOWS AND WSL!!!!!!!!!!!!
+
 
 This web application was inspired by a video from Conner Jensen on YouTube. Their insightful tutorial on [specific topic or project name] provided a solid foundation for this project. While I have made modifications and added some unique features to tailor the app to my own goals, the core idea and structure are heavily influenced by their excellent content. You can check out their original video [https://www.youtube.com/watch?v=hURUMwdCWuI] to see the source of inspiration. A huge thanks to Conner Jensen for sharing their knowledge and inspiring this creation!
 
@@ -6,8 +8,8 @@ The application in the github is the base version with pending migrations and th
 
 Things to remember before you up and run the project
 
-WINDOWS
-==============
+# WINDOWS
+
 1. install ruby 3.2.2 (x64-devkit)
 2. Install libvips to show thumbnail [https://github.com/libvips/libvips/releases] => [https://github.com/libvips/build-win64-mxe/releases/tag/v8.16.0]
    Download vips-dev-w64-web-8.16.0.zip  after downloading this zip extract it and move to C disk and copy bin path and paste in environmental variable (vips --version)
@@ -56,6 +58,29 @@ You can check => bin/rails db:migrate:status (if the migrations are down or up)
 10. We deploy on Render create a free account here render.com
 
 
+
+
+# WSL
+
+1. Install WSL
+2. install rbenv and install rbenv install 3.2.2 (rbenv global 3.2.2)
+3. install libvips (8.16) [https://github.com/libvips/libvips/releases]
+Download Source code(tar.gz) into downloads folder of windows and open wsl in the download path and do the following steps
+* tar -xvzf filename.tar.gz
+* cd filename
+* sudo apt update
+* sudo apt install -y build-essential meson ninja-build pkg-config libglib2.0-dev libjpeg-dev libpng-dev
+meson setup _build --prefix=/usr/local
+* cd _build
+* ninja
+* sudo ninja install
+* vips --version
+
+4. install pg => sudo apt install libpq-dev
+
+5. From inside the project folder bundle install
+
+6. Then bin/dev
 
 
 
