@@ -1,3 +1,4 @@
+I created the application using command "rails new ecommerce-application-ROR --css=tailwind"
 
 # I WOULD SUGGEST INSTALL BOTH ENVIRONMENT IN WINDOWS AND WSL!!!!!!!!!!!!
 
