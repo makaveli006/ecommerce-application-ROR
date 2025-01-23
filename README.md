@@ -29,23 +29,23 @@ I have provided two types of Procfile.dev files called Procfile2.dev and Procfil
 
 previously
 -------------
-web: bin/rails server
+web: bin/rails server  
 css: bin/rails tailwindcss:watch
 
 now
 -------------------------
-web: rails server
+web: rails server  
 css: rails tailwindcss:watch
 
 
 previously
 ---------------------
-web: env RUBY_DEBUG_OPEN=true bin/rails server -p 3000
+web: env RUBY_DEBUG_OPEN=true bin/rails server -p 3000  
 css: bin/rails tailwindcss:watch
 
 now
 ----------------
-web: env RUBY_DEBUG_OPEN=true rails server -p 3000
+web: env RUBY_DEBUG_OPEN=true rails server -p 3000  
 css: rails tailwindcss:watch
 
 
