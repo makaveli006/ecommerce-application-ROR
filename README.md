@@ -74,7 +74,7 @@ Download Source code(tar.gz) into downloads folder of windows and open wsl in th
 * tar -xvzf filename.tar.gz
 * cd filename
 * sudo apt update
-* sudo apt install -y build-essential meson ninja-build pkg-config libglib2.0-dev libjpeg-dev libpng-dev
+* sudo apt install -y build-essential meson ninja-build pkg-config libglib2.0-dev libjpeg-dev libpng-dev libwebp-dev
 * meson setup _build --prefix=/usr/local
 * cd _build
 * ninja
